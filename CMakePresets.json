@@ -66,15 +66,6 @@
       "hidden": true
     },
     {
-      "name": "x64-windows-internal",
-      "inherits": "x64-windows",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Internal",
-        "VCPKG_TARGET_TRIPLET": "x64-windows-145-internal",
-        "VCPKG_HOST_TRIPLET": "x64-windows-145-internal"
-      }
-    },
-    {
       "name": "x64-windows-release",
       "inherits": "x64-windows",
       "cacheVariables": {
@@ -90,24 +81,6 @@
         "CMAKE_BUILD_TYPE": "Debug",
         "VCPKG_TARGET_TRIPLET": "x64-windows-145-debug",
         "VCPKG_HOST_TRIPLET": "x64-windows-145-debug"
-      }
-    },
-    {
-      "name": "x64-windows-trinitydev",
-      "inherits": "x64-windows",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "TrinityDev",
-        "VCPKG_TARGET_TRIPLET": "x64-windows-145-trinitydev",
-        "VCPKG_HOST_TRIPLET": "x64-windows-145-trinitydev"
-      }
-    },
-    {
-      "name": "arm64-osx-internal",
-      "inherits": "arm64-osx",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Internal",
-        "VCPKG_TARGET_TRIPLET": "arm64-osx-internal",
-        "VCPKG_HOST_TRIPLET": "arm64-osx-internal"
       }
     },
     {
@@ -129,24 +102,6 @@
       }
     },
     {
-      "name": "arm64-osx-trinitydev",
-      "inherits": "arm64-osx",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "TrinityDev",
-        "VCPKG_TARGET_TRIPLET": "arm64-osx-trinitydev",
-        "VCPKG_HOST_TRIPLET": "arm64-osx-trinitydev"
-      }
-    },
-    {
-      "name": "x64-osx-internal",
-      "inherits": "x64-osx",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Internal",
-        "VCPKG_TARGET_TRIPLET": "x64-osx-internal",
-        "VCPKG_HOST_TRIPLET": "x64-osx-internal"
-      }
-    },
-    {
       "name": "x64-osx-release",
       "inherits": "x64-osx",
       "cacheVariables": {
@@ -162,15 +117,6 @@
         "CMAKE_BUILD_TYPE": "Debug",
         "VCPKG_TARGET_TRIPLET": "x64-osx-debug",
         "VCPKG_HOST_TRIPLET": "x64-osx-debug"
-      }
-    },
-    {
-      "name": "x64-osx-trinitydev",
-      "inherits": "x64-osx",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "TrinityDev",
-        "VCPKG_TARGET_TRIPLET": "x64-osx-trinitydev",
-        "VCPKG_HOST_TRIPLET": "x64-osx-trinitydev"
       }
     }
   ]

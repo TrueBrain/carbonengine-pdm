@@ -23,13 +23,9 @@ import jetbrains.buildServer.configs.kotlin.vcs.GitVcsRoot
 import jetbrains.buildServer.configs.kotlin.buildFeatures.provideAwsCredentials
 
 val arm64_Debug = CarbonBuildMacOS("Debug MacOS arm64", "Debug", "arm64-osx-debug", "aarch64")
-val arm64_Internal = CarbonBuildMacOS("Internal MacOS arm64", "Internal", "arm64-osx-internal", "aarch64")
-val arm64_TrinityDev = CarbonBuildMacOS("TrinityDev MacOS arm64", "TrinityDev", "arm64-osx-trinitydev", "aarch64")
 val arm64_Release = CarbonBuildMacOS("Release MacOS arm64", "Release", "arm64-osx-release", "aarch64")
 
 val x64_Debug = CarbonBuildMacOS("Debug MacOS x64", "Debug", "x64-osx-debug", "x86_64")
-val x64_Internal = CarbonBuildMacOS("Internal MacOS x64", "Internal", "x64-osx-internal", "x86_64")
-val x64_TrinityDev = CarbonBuildMacOS("TrinityDev MacOS x64", "TrinityDev", "x64-osx-trinitydev", "x86_64")
 val x64_Release = CarbonBuildMacOS("Release MacOS x64", "Release", "x64-osx-release", "x86_64")
 
 object Project : Project({
@@ -39,13 +35,9 @@ object Project : Project({
     buildType(_Self.buildTypes.CreateUniversalBuilds)
 
     buildType(arm64_Debug)
-    buildType(arm64_Internal)
-    buildType(arm64_TrinityDev)
     buildType(arm64_Release)
 
     buildType(x64_Debug)
-    buildType(x64_Internal)
-    buildType(x64_TrinityDev)
     buildType(x64_Release)
 })
 
