@@ -15,8 +15,7 @@ class UniversalBuild() : BuildType({
     params{
         param("carbon-pipeline-tools-ref", "refs/heads/main")
         param("universal-output-dir", "%system.teamcity.build.workingDir%/output_build")
-        param("universal-lib-path", "lib/macOS/universal/AppleClang/")
-        param("universal-bin-path", "bin/macOS/universal/AppleClang/")
+        param("universal-lib-path", "lib/")
         param("x64-lib-path", "lib/macOS/x64")
         param("arm64-lib-path", "lib/macOS/arm64")
         param("x64-bin-path", "bin/macOS/x64")
