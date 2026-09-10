@@ -9,8 +9,6 @@ file (STRINGS "BuildNumber.txt" BUILD_NUMBER)
 string(REPLACE "\"" "" BUILD_NUMBER ${BUILD_NUMBER})
 project(pdm VERSION ${BUILD_NUMBER})
 
-include(cmake/CcpGlobalSettings.cmake)
-
 option(DLL_EXPORT "Export symbols (for building DLL)" OFF)
 
 list(INSERT CMAKE_MODULE_PATH 0 ${CMAKE_SOURCE_DIR}/cmake)
